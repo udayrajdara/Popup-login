@@ -5,7 +5,7 @@
     font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: rgb(11, 125, 255);
+    background: linear-gradient(to right, rgb(54, 54, 237), rgb(242, 46, 46));
     height: 100vh;
 }
 .center{
@@ -33,7 +33,7 @@ body{
     transform: translate(-50%, -50%) scale(1.25);
     width: 400px;
     padding: 20px 30px;
-    background-color: rgb(198, 233, 255);
+    background-color: white;
     box-shadow: 0px 5px 10px 0px black;
     border-radius: 10px;
     transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms,
@@ -87,10 +87,13 @@ body{
     border: none;
     outline: none;
     font-size: 16px;
-    background-color: #000;
+    background: linear-gradient(to right, rgb(54, 54, 237), rgb(242, 46, 46));
     color: #fff;
     border-radius: 10px;
     cursor: pointer;
+}
+.popup .group-fields .fields button:hover{
+    background: linear-gradient(to right, rgb(242, 46, 46), rgb(54, 54, 237));
 }
 .popup .group-fields .fields .forgot{
     display: block;
@@ -135,7 +138,7 @@ body{
     transform: translate(-50%, -50%) scale(1.25);
     width: 400px;
     padding: 20px 30px;
-    background-color: rgb(198, 233, 255);
+    background-color: white;
     box-shadow: 0px 5px 10px 0px black;
     border-radius: 10px;
     transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms,
@@ -190,10 +193,13 @@ body{
     border: none;
     outline: none;
     font-size: 16px;
-    background-color: #000;
+    background: linear-gradient(to right, rgb(54, 54, 237), rgb(242, 46, 46));
     color: #fff;
     border-radius: 10px;
     cursor: pointer;
+}
+.popup-signup .group-field .input-fields button:hover{
+    background: linear-gradient(to right, rgb(242, 46, 46), rgb(54, 54, 237));
 }
 
 .popup-signup .group-field .input-fields p{
