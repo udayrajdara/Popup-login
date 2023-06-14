@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./5087607.png" type="image/x-icon">
+</head>
+<body>
+    <section>
+        <div>
+            <div class="center">
+                <button id="show-login">Login</button>
+            </div>
+            <div class="popup">
+                <div class="close-btn">&times;</div>
+            
+            <div class="group-fields">
+            <h2>Login</h2>
+            <form action="">
+                <div class="fields">
+                    <input type="email" placeholder="Email" name="email" id="email" required>
+                </div>
+                <div class="fields">
+                    <input type="password" placeholder="Password" name="password" id="password" required>
+                </div>
+                <div class="fields">
+                    <input type="checkbox" name="remember-me" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+
+                <div class="fields">
+                    <button>Sign in</button>
+                </div>
+                <div class="fields">
+                    <p>Need an accound? <a href="#" class="signup">Sign Up</a></p>
+                </div>
+                <div class="fields">
+                    <a href="#" class="forgot">Forgot password?</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+        </div>
+
+
+        <div>
+            
+            <div class="popup-signup">
+                <div class="close-btns">&times;</div>
+            
+            <div class="group-field">
+            <h2>Sign Up</h2>
+            <form action="">
+                <div class="input-fields">
+                    <input type="text" placeholder="Name" name="name" id="name" required>
+                </div>
+                <div class="input-fields">
+                    <input type="email" placeholder="Email" name="email" id="email" required>
+                </div>
+                <div class="input-fields">
+                    <input type="password" placeholder="Password" name="password" id="password" required>
+                </div>
+                <div class="input-fields">
+                    <input type="checkbox" name="remember-me" id="remember-me">
+                    <label for="remember-me">Remember me</label>
+                </div>
+
+                <div class="input-fields">
+                    <button>Sign Up</button>
+                </div>
+                <div class="input-fields">
+                    <p>Already have an account? <a href="#" class="signin">Login</a></p>
+                </div>
+
+            </form>
+        </div>
+    </div>
+        </div>
+    </section>
+
+    
+
+
+    <script>
+
+        let a = document.querySelector("#show-login")
+        a.addEventListener('click', function(){
+        document.querySelector('.popup').classList.add('active');
+        });
+
+        let b = document.querySelector(".popup .close-btn")
+        b.addEventListener('click', function(){
+        document.querySelector('.popup').classList.remove('active');
+        });
+
+        let c = document.querySelector(".signup")
+        c.addEventListener('click', function(){
+        document.querySelector('.popup-signup').classList.add('active');
+        });
+
+        let d = document.querySelector(".popup-signup .close-btns")
+        d.addEventListener('click', function(){
+        document.querySelector('.popup-signup').classList.remove('active');
+        });
+
+        let e = document.querySelector(".signin")
+        e.addEventListener('click', function(){
+        document.querySelector('.popup-signup').classList.remove('active');
+        });
+
+
+
+    </script>
+</body>
+</html>
