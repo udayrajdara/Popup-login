@@ -95,16 +95,21 @@
         let c = document.querySelector(".signup")
         c.addEventListener('click', function(){
         document.querySelector('.popup-signup').classList.add('active');
+        document.querySelector('.popup').classList.remove('active');
+
         });
 
         let d = document.querySelector(".popup-signup .close-btns")
         d.addEventListener('click', function(){
         document.querySelector('.popup-signup').classList.remove('active');
+        document.querySelector('.popup').classList.remove('active');
+
         });
 
         let e = document.querySelector(".signin")
         e.addEventListener('click', function(){
         document.querySelector('.popup-signup').classList.remove('active');
+
         });
 
 
